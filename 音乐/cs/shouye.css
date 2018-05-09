@@ -1,0 +1,193 @@
+.qiu-header{
+    width: 1500px;
+    height: 80px;
+    position: fixed;
+    overflow: hidden;
+    background-color: red;
+    z-index: 1;
+
+}
+.qiu-header h2{
+    display: inline-block;
+    float: left;
+    width: 200px;
+}
+form{
+    padding-top: 17px;
+    width: 830px;
+    float: left;
+    overflow: hidden;
+}
+input{
+    width: 200px;
+    border-radius: 4px;
+    display: block;
+    float: left;
+
+}
+
+input:focus{
+    background-color: white;
+}
+
+.qiu-tb{
+    width: 100%;
+    padding-left: 500px;
+    padding-top: 20px;
+    position: relative;
+}
+.qiu-tb nav ul{
+    margin: 0;
+    padding: 0;
+
+}
+.qiu-tb ul li{
+    list-style-type: none;
+    margin: 0 15px;
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: 500;
+
+}
+
+.qiu-page{
+    width: 1500px;
+
+}
+.qiu-asides{
+    position: absolute;
+    top: 80px;
+    height: 100%;
+    width: 200px;
+}
+.qiu-aside{
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    width: 200px;
+    overflow-y: scroll;  /*垂直方向内容溢出则出现滚动条*/
+    background-color: whitesmoke;
+    color: red;
+
+}
+.qiu-asideNav {
+    padding: 0px 0px 0px; /*上内边距为80px,左右内边距都为10px，下内边距为10px*/
+}
+.qiu-asideNav h2{
+    padding-left: 15px;
+}
+.qiu-asideNav li {
+    border-top: 1px solid seashell;
+    background-color: whitesmoke;
+}
+.qiu-asideNav a {
+    text-decoration: none;
+    display: block;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 44px;
+    color: #000000;
+}
+.qiu-asideNav a:hover {
+    color: white;
+    background-color: gray;
+}
+.qiu-ml{
+    width:100%;
+    padding-left: 210px;
+    padding-top:90px;
+    background:whitesmoke;
+}
+.qiu-ml nav ul{
+    margin: 0;
+    padding: 0;
+}
+.qiu-ml nav ul li{
+    margin: 0 70px;
+    display: inline-block;
+}
+.qiu-ml nav ul li a{
+    color: black;
+    font-size: 1.25em;
+    font-weight: 200;
+    text-decoration:none;
+}
+.qiu-ml nav ul li a.active{
+    color: red;
+    text-decoration: underline;
+
+}
+.qiu-ml nav ul li a:hover,nav ul li a.active{
+    color: red;
+}
+.headers{
+    margin-bottom: 20px;
+    width:1250px;
+    height: 300px;
+    padding-left:100px;
+    padding-top: 0px;
+    margin: 10px auto;
+}
+.qiu-gd{
+    padding-top: 5px;
+    background-color: whitesmoke;
+}
+.qiu-gd h4{
+    font-size: 20px; /*字体大小55px*/
+    margin-top: 0px; /*上边距30px*/
+    padding-left:250px;
+}
+.qiu-gd h4 h7{
+    font-size: 15px;
+    margin-top: 0px; /*上边距30px*/
+    padding-left: 960px;
+}
+.items{
+    margin-bottom: 20px;
+    width:1250px;
+    padding-left:210px;
+    margin-top: 0px;
+    margin: 10px auto;
+    height: 270px;
+}
+.item{
+    position: relative;
+    width: 230px;
+    height: 250px;
+    text-align: center;
+    margin-right: 20px;
+    background-color-:#fff;
+    float: left;
+    transition: all .5s;/*Css3�����������ԣ����ɣ�all(Ĭ��ֵ)ָ�������Ըı䣬����ת��������0.5s����ɡ�*/
+    box-shadow:  #fff 0px 5px 5px ;
+    top:0;
+    overflow: hidden;
+
+}
+.pic {
+    margin-bottom: 10px;
+}
+
+.desc {
+    position:absolute;
+    bottom:-80px;
+    width: 100%;
+    height: 60px;
+    background-color: gray;
+    transition: all .5s;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.item:hover {
+    top: -5px;
+    box-shadow: 0 0 15px #AAA;
+}
+.item:hover .desc {
+    bottom: 0px;
+}
+.detail{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.detail i{color: white;}
