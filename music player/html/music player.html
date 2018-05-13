@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>music player</title>
+    <link rel="stylesheet" href="../css/music%20player.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../font%20awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+<audio id="audio">
+    <source src="../audio/Troye%20Sivan%20-%20BLUE.mp3" type="audio/mpeg" codecs="mp3"/>
+</audio>
+
+<div class="row-list"><h3>音乐馆</h3></div>
+<div class="row-list"><h3>个人主页</h3></div>
+<div class="row-list"><h3>MV播放</h3></div>
+<div class="row-list"><h3>动态</h3></div>
+<dic class="row-list"></dic>
+<div class="row-list">
+    <button title="搜索"style="color: #fff;"><i class="fa fa-search fa-2x"></i> </button>
+    <input type="text" style="height: 48px;width:200px;background-color: transparent;color: #fff;border: none" name="search"
+                             placeholder="搜索音乐、歌手"/>
+</div>
+
+<br>
+<div class="controls1">
+    <h2 style="color: #2b669a;align=left">播放列表</h2>
+        <ul>
+            <li><but>->Troye Sivan - BLUE</but></li>
+            <li><but>->Taylor Swift - Holy Ground</but></li>
+            <li><but>->Camila Cabello - Never Be the Same</but></li>
+            <li><but>->Ella Vos- You Don't Know About Me</but></li>
+            <li><but>->Alan Walker - Tired</but></li>
+        </ul>
+</div>
+
+<div class="controls2">
+    <h2 style="color:#b9def0"align="center">Troye Sivan-BLUE</h2>
+    <img src="../image/BLUE.jpg" align="middle" width="400" height="400"/><br><br>
+    <button title="循环播放"><i class="fa fa-retweet fa-2x"></i> </button>
+    <button title="上一首"><i class="fa fa-step-backward fa-3x"></i> </button>&nbsp;&nbsp;&nbsp;
+
+    <button  id="play-pause" title="播放" onclick="togglePlayPause()">
+        <i class="fa fa-play fa-4x"></i> </button>
+
+    <button id="go-forward" title="下一首" onclick="GoForward()">
+        <i class="fa fa-step-forward fa-3x"></i> </button>
+
+    <button title="顺序播放"><i class="fa fa-random fa-2x"></i> </button>
+    <br>
+
+    <button title="音量" ><i class="fa fa-volume-down fa-2x"></i> </button>
+    <input name="volume" id="volume" style="width: 300px;" min="0" max="1" step="0.1"
+    type="range" onchange="setVolume()"/><br>
+
+    <button title="添加到我喜欢"><i class="fa fa-heart-o fa-2x"></i> </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button title="删除"><i class="fa fa-trash-o fa-2x"></i> </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button title="分享"><i class="fa fa-share-square-o fa-2x"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button title="评论区"><i class="fa fa-comment-o fa-2x"></i></button>
+</div>
+
+<div class="lyrics">
+    <br><br>
+    <p>BLUE - Alex Hope&Troye Sivan</p>
+    <p>Love it's hard I know</p>
+    <p>All your lights are red but I'm green to go</p>
+    <p>Used to see you high now you're only low</p>
+    <p>All your lights are red but I'm green to go</p>
+    <p>I want you I'll colour me blue</p>
+    <p>Anything it takes to make you stay</p>
+    <p>Only seeing myself</p>
+    <p>When I'm looking up at you</p>
+    <p>I want you I'll colour me blue</p>
+    <p>Anything it takes to make you stay</p>
+    <p>Only seeing myself</p>
+    <p>When I'm looking up at you</p>
+    <p>I can't say no though the lights are on</p>
+    <p>There's nobody home</p>
+    <p>Swore I'd never lose control</p>
+    <p>Then I fell in love with a heart that beats so slow</p>
+    <p>I want you I'll colour me blue</p>
+    <p>Anything it takes to make you stay</p>
+    <p>Only seeing myself</p>
+    <p>When I'm looking up at you</p>
+    <p>I want you I'll colour me blue</p>
+    <p>Anything it takes to make you stay</p>
+    <p>Only seeing myself</p>
+    <p>When I'm looking up at you</p>
+    <p>I want you I'll colour me blue</p>
+    <p>Anything it takes to make you stay</p>
+    <p>Only seeing myself</p>
+    <p>When I'm looking up at you</p>
+    <p>I know you're seeing black and white</p>
+    <p>So I'll paint you a clear-blue sky</p>
+    <p>Without you I am colour-blind</p>
+    <p>It's raining every time I open my eyes</p>
+    <p>I know you're seeing black and white</p>
+    <p>So I'll paint you a clear-blue sky</p>
+    <p>Without you I am colour-blind</p>
+    <p>It's raining every time I open my eyes</p>
+    <p>I want you I'll colour me blue</p>
+    <p>Only seeing myself</p>
+    <p>When I'm looking up at you</p>
+    <p>When I'm looking up at you</p>
+    <p>I want you I'll colour me blue</p>
+    <p>Anything it takes to make you stay</p>
+    <p>Only seeing myself</p>
+    <p>When I'm looking up at you</p>
+    <p>When I'm looking up at you</p>
+    <p>I want you I'll colour me blue</p>
+    <p>Anything it takes to make you stay</p>
+    <p>Only seeing myself</p>
+    <p>When I'm looking up at you</p>
+    <p>I want you I'll colour me blue</p>
+    <p>Anything it takes to make you stay</p>
+    <p>Only seeing myself</p>
+    <p>When I'm looking up at you</p>
+
+
+</div>
+<script src="../js/music%20player.js" charset="GBK"></script>
+</body>
+</html>

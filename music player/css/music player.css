@@ -1,0 +1,89 @@
+body{
+    width:100%;
+    height:100%;
+    background:url("../image/133.jpg")no-repeat;
+    background-size: 100%;
+}
+.row-list{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /*background-color: #204d74;*/
+    float:left;
+    text-align: center;
+    height: 50px;
+    width:16.66%;
+    color: #b9def0;
+}
+.row-list:hover{
+    color: #c7254e;
+    cursor: pointer;
+}
+li{
+    text-align: left;
+    list-style-type:none;
+}
+.controls1{
+    height: 700px;
+    position: relative;
+    width: 20%;
+    color: #761c19;
+    text-align:center;
+    line-height: 50px;
+    float: left;
+}
+.controls2{
+    position: relative;
+    width: 40%;
+    height: 700px;
+    color: #9acfea;
+    text-align:center;
+    float: left;
+}
+.lyrics{
+    position: relative;
+    float: left;
+    width: 40%;
+    height: 700px;
+    color: #9acfea;
+    text-align: center;
+    overflow-y: scroll;
+    box-shadow: none;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+p:hover{
+    color: #e4b9c0;
+}
+button{
+    margin: 5px;
+    color: #b9def0;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    text-shadow: 1px 1px 2px #1b6d85;
+    transition: all 0.3 ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+but{
+    margin: 5px;
+    color:#b9def0;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    text-shadow: 0;
+    transition: all 0.3 ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+but:hover{
+    color: darkred;
+    font-size: 102%;
+}
+button:hover{
+    color: #fff;
+}
