@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MV PLAY</title>
+    <link href="mv play.css"rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<section class="nav1">
+    <ul>
+        <li style="float: left"><img src="images/play3.png" width="38px" height="38px" alt=""></li>
+        <li style="float: left"><a href="#">&nbsp;&nbsp;&nbsp云音乐&nbsp;&nbsp;&nbsp;</a></li>
+        <li style="float: left" ><img src="images/change1.png" width="25px" height="25px"></li>
+        <li style="float: left" ><img src="images/change2.png" width="25px" height="25px"></li>
+        <li style="float: left"><form>
+            <input type="text" placeholder="搜索音乐，视频，歌词，电台">
+            <button type="submit"><img src="images/scan.png" width="20px" height="20px"></button>
+        </form></li>
+        <li style="float: right"><img src="images/setting.png" width="25px" height="25px">&nbsp;&nbsp;&nbsp; </li>
+        <li style="float: right"><img src="images/letter.png" width="25px" height="25px">&nbsp;&nbsp;&nbsp; </li>
+        <li style="float: right"><img src="images/them.png" width="25px" height="25px">&nbsp;&nbsp;&nbsp; </li>
+    </ul>
+</section>
+<section class="main">
+<div class="view1">
+    <p class="head"><img src="images/mv1.png" style="margin: -5px" width="30px" height="20px" alt=""/>&nbsp;&nbsp;In My Blood(cover)&nbsp;&nbsp;&nbsp;New Hope Club</p>
+    <video id="myVideo" width="800px">
+        <source src="videos/New Hope Club - In My Blood (Cover).mp4" type="video/mp4">
+    </video>
+    <br/>
+    <button id="playPause" onclick="playPause();">播放</button>
+    <button onclick="goBack(5);">快进5s</button>
+    <button onclick="goBack(-5);">快退5s</button>
+    <button onclick="volume(0.1);">音量+</button>
+    <button onclick="volume(-0.1);">音量-</button>
+    <button id="isMuted" onclick="isMuted();">静音</button>
+    <h3 style="font-weight: lighter">评论（82）</h3>
+    <hr width="90%" color="gray" style="float: left">
+    <form action="#" method="post">
+        <br/>
+        <textarea cols="115" rows="5" style=""></textarea>
+        <br/><br/>
+        <ul>
+             <li><img src="images/write1.png" width="30px" height="30px" alt="" style="margin: 0px">&nbsp;&nbsp;&nbsp;<img src="images/write2.png" width="30px" height="30px" alt="">&nbsp;&nbsp;&nbsp;<img src="images/write3.png" width="30px" height="30px" alt=""><img src="images/write4.png" width="30px" height="30px" alt="" style="margin-left: 20px"></li>
+        </ul>
+    </form>
+    <h4>最新评论（82)</h4>
+    <br/>
+    <div class="box">
+    <img src="images/head1.png" width="40px" height="40px" alt="" style="float: left">
+    <h4 style="margin: 0px ;font-weight: bolder" >mi迷迷迷迷：这个开头的B和G简直和原唱一毛一样了！这个团太魔性了啊！</h4>
+    <h5 style="margin: 40px;font-weight: lighter">5月9日 20：23<img src="images/write4.png" width="20px" height="18px" alt="" style="float: right;margin-right: 15px"><img src="images/share.png" width="25px" height="18px" alt="" style="float: right;margin-right: 10px"><img src="images/good.png" width="25px" height="18px" alt="" style="float: right"></h5>
+</div>
+    <div class="box">
+        <img src="images/head2.png" width="40px" height="40px" alt="" style="float: left">
+        <h4 style="margin: 0px ;font-weight: bolder" >JudeBeke:真的很喜欢George啊 很有英伦风 超耐看的而且很可爱</h4>
+        <h5 style="margin: 40px;font-weight: lighter">5月9日 08：47<img src="images/write4.png" width="20px" height="18px" alt="" style="float: right;margin-right: 15px"><img src="images/share.png" width="25px" height="18px" alt="" style="float: right;margin-right: 10px"><img src="images/good.png" width="25px" height="18px" alt="" style="float: right"></h5>
+    </div>
+    <div class="box">
+        <img src="images/head3.png" width="40px" height="40px" alt="" style="float: left">
+        <h4 style="margin: 0px ;font-weight: bolder" >世勋哥哥的super迷妹：看着Reece的脸我就别无所求了!</h4>
+        <h5 style="margin: 40px;font-weight: lighter">5月8日 08：00<img src="images/write4.png" width="20px" height="18px" alt="" style="float: right;margin-right: 15px"><img src="images/share.png" width="25px" height="18px" alt="" style="float: right;margin-right: 10px"><img src="images/good.png" width="25px" height="18px" alt="" style="float: right"></h5>
+    </div>
+    <div class="box">
+        <img src="images/head4.png" width="40px" height="40px" alt="" style="float: left">
+        <h4 style="margin: 0px ;font-weight: bolder" >_无名氏:他们以后一定会越来越红的 加油哈 ttt一直支持你们 最喜欢你们了</h4>
+        <h5 style="margin: 40px;font-weight: lighter">5月7日 15：31<img src="images/write4.png" width="20px" height="18px" alt="" style="float: right;margin-right: 15px"><img src="images/share.png" width="25px" height="18px" alt="" style="float: right;margin-right: 10px"><img src="images/good.png" width="25px" height="18px" alt="" style="float: right"></h5>
+    </div>
+</div>
+<div class="view2">
+        <br/>
+        <br/>
+        <h3>MV介绍</MV></h3>
+        <hr width="95%" color="gray"></hr>
+        <h4>发布时间：2018-03-30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;播放次数：4980次</h4>
+        <h4>标签：流行/流行乐/音乐/Showtime/MV</h4>
+        <br/>
+        <h3>相关推荐</h3>
+    <div class="view3">
+            <img src="images/MV1.jpg" width="200px" height="100px" alt="" style="float: left">
+            <h4 style="margin: 30px">开往早晨的午夜（异口同声&nbsp;第10期）&nbsp;张碧晨/王奕丁/刘玥&nbsp;&nbsp;2018-4-28</h4>
+    </div>
+    <div class="view3">
+        <img src="images/MV2.jpg" width="200px" height="100px" alt="" style="float: left">
+        <h4 style="margin: 30px">Ready For It?（Live at The 2018 Reputation....）&nbsp;Taylor Swift&nbsp;&nbsp;2018-5-9</h4>
+    </div>
+    <div class="view3">
+        <img src="images/MV3.jpg" width="200px" height="100px" alt="" style="float: left">
+        <h4 style="margin: 30px">属于我们的（《后来2018》QQ音乐&《后来的我们》）&nbsp;刘若英&nbsp;&nbsp;2018-4-24</h4>
+    </div>
+    <div class="view3">
+        <img src="images/MV4.jpg" width="200px" height="100px" alt="" style="float: left">
+        <h4 style="margin: 30px">N1FT-&UN&nbsp;N1FT&nbsp;&nbsp;2018-5-9</h4>
+    </div>
+    <div class="view3">
+        <img src="images/MV5.jpg" width="200px" height="100px" alt="" style="float: left">
+        <h4 style="margin: 30px">戒烟&nbsp;李荣浩&nbsp;&nbsp;2018-5-9</h4>
+    </div>
+</div>
+</section>
+</body>
+<script type="text/javascript" src="mv play.js" charset=""></script>
+</html>

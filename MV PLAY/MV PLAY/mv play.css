@@ -1,0 +1,100 @@
+.main{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+}
+h4{
+    font-weight: lighter;
+}
+.view1{
+    width: 66%;
+    height:auto;
+    float:left;
+}
+.view2{
+    margin:0px;
+    width: 34%;
+    height:auto;
+    float:right;
+}
+ul{
+    list-style-type:none;             /*清除原有样式*/
+}
+.nav1{
+    background-color: #337ab7;
+    height: 68px;
+    width: 1400px;
+    margin: -15px;
+    position: fixed;
+    z-index: 1;
+}
+.nav1 ul li{
+    position: relative;
+    top:10px;
+}
+.nav1 ul li a{
+    font-family: "Arial Unicode MS";
+    line-height:28px;
+    color:#FFF;
+    margin:2px 10px;
+    font-size:30px;/*用12号字*/
+    display:block;/*因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+    text-decoration:none; /*去掉下划线*/
+}
+.nav1 ul li form{
+    position: relative;
+    width: 200px;
+    height: auto;
+    margin:0 auto;
+    padding: 0 auto;
+    text-align: center;
+}
+.nav1 ul li input, button {
+    border: none;
+    outline: none;
+}
+.nav1 ul li input {
+    width: 200px;
+    height: 30px;
+    padding-left: 13px;
+}
+.nav1 ul li button {
+    height: 32px;
+    width: 42px;
+    cursor: pointer;
+    float: right;
+    margin: -32px -55px;
+}
+.head{
+    font-size: larger;
+    font-weight: bold;
+    margin: 60px 40px;
+    height:0px;
+}
+button {
+
+    position: relative;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    margin:10px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    background-color: #944bc8;
+    color: white;
+}
+
+button:hover {
+    text-decoration: none;
+}
+.view3{
+    height:100px;
+}
+div.box{
+    box-shadow:1px 1px 1px black;
+}
